@@ -1,0 +1,1 @@
+Day 23: Launched my first AWS EC2 Instance. I selected the OS, the Instance Type, and configured the Network. I am now officially a Cloud Provisioner.
