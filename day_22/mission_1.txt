@@ -1,0 +1,1 @@
+"Day 22: Completed Cloud Quest Mission 1. I launched my first AWS resource. I understand that the 'Cloud' is just a remote Linux server managed by a web console."
