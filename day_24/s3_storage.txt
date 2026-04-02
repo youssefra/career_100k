@@ -1,0 +1,1 @@
+Day 24: Created ec2 instance learnt how to change its type learnt about ssh keys and how to upgrade the storage to prevent any server break down sustaining reliability
