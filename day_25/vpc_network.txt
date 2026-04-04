@@ -1,0 +1,1 @@
+Day 25: Built my first AWS VPC. I configured a Public Subnet and attached an Internet Gateway. I now understand that a VPC is the foundation of every secure cloud environment.
