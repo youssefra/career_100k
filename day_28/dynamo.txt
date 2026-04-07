@@ -1,0 +1,1 @@
+I learnt how to use Amazon Dynamo DB to create tables and datasets to maintain stability and scalability to buisinesses if needed by determining its type and values 
