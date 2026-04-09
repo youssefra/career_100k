@@ -1,0 +1,7 @@
+Launch and configure an Amazon EFS file system.
+
+Mount the file system to an Amazon EC2 instance.
+
+Connect a second EC2 instance to the same file system.
+
+ Share files between the two EC2 instances.
