@@ -1,0 +1,2 @@
+Created an IAM group and users 
+attached an AWS managed policy to the group of users 
