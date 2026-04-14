@@ -1,0 +1,1 @@
+Day 31: Final Mission Complete. I have built a Highly Available Web Application using Multi-AZ RDS and Load Balancing. I am no longer a student; I am a Cloud Practitioner. Ready for the exam. Ready for the industry."
