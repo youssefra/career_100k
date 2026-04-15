@@ -1,0 +1,9 @@
+--- SHARED RESPONSIBILITY ---
+AWS is responsible for: "The Cloud" (Hardware, Managed Services like RDS patching).
+I am responsible for: "In the Cloud" (My Data, EC2 OS, Security Group rules).
+
+--- SUPPORT PLANS ---
+- Basic: Free.
+- Developer: Business hours email.
+- Business: 24/7 Phone/Chat (1-hr response).
+- Enterprise: Includes a TAM (Technical Account Manager).
