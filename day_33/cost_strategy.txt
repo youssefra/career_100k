@@ -1,0 +1,3 @@
+AWS Budgets: Set a limit (e.g., $10) and get an email if you go over.
+
+AWS Cost Explorer: A graph that shows where your money is going.

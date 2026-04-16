@@ -1,0 +1,7 @@
+--- THE 6 PILLARS ---
+1. Operational Excellence: Code for everything.
+2. Security: IAM and Encryption.
+3. Reliability: Multi-AZ and Auto Scaling.
+4. Performance: Right-sizing instances.
+5. Cost Optimization: Use only what is needed.
+6. Sustainability: Efficient energy usage.
