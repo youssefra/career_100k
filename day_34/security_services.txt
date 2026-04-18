@@ -1,0 +1,5 @@
+AWS Shield: Protects against DDoS (hacker attacks that flood your site).
+
+AWS WAF: A firewall for your web applications.
+
+AWS Inspector: Scans your EC2 servers for security holes.

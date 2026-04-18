@@ -1,0 +1,6 @@
+--- IAM BEST PRACTICES ---
+1. Lock the Root User with MFA.
+2. Create individual IAM Users (no sharing accounts).
+3. Use Groups to assign permissions.
+4. Apply Least Privilege (don't use AdministratorAccess for everything).
+5. Use Roles for EC2 instances instead of saving keys on the server.
