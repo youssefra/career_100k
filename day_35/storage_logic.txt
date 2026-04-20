@@ -1,0 +1,5 @@
+S3: Object Storage (Images, Videos, Static Sites).
+
+EBS: Block Storage (The hard drive for your EC2 instance).
+
+EFS: Shared File System (Multiple EC2s talking to one drive).

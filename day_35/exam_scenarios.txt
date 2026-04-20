@@ -1,0 +1,7 @@
+SCENARIO -> SOLUTION
+1. Unexpected Costs -> AWS Budgets / Cost Explorer
+2. DDoS Attack -> AWS Shield / AWS WAF
+3. Global Latency -> CloudFront (CDN)
+4. Compliance/Audit -> AWS CloudTrail (Logs who did what)
+5. Decoupling Apps -> SQS (Simple Queue Service)
+6. Moving Terabytes of Data -> Snowball (Physical device)
