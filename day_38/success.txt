@@ -1,0 +1,1 @@
+Day 38: DEFEATED. Bypassed AWS Educate and LocalStack paywalls. Running LocalStack 3.0 via Docker. Connection verified via STS.

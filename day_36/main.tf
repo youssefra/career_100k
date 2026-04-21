@@ -1,14 +1,19 @@
-# 1. Define the Provider (Who are we talking to?)
 provider "aws" {
-  region = "us-east-1"
+  region                      = "us-east-1"
+  access_key                  = "test"
+  secret_key                  = "test"
+  skip_credentials_validation = true
+  skip_metadata_api_check     = true
+  skip_requesting_account_id  = true
+
+  endpoints {
+    ec2 = "http://localhost:4566"
+    s3  = "http://localhost:4566"
+    iam = "http://localhost:4566"
+    sts = "http://localhost:4566"
+  }
 }
 
-# 2. Define the Resource (What are we building?)
-resource "aws_instance" "my_first_server" {
-  ami           = "ami-0c55b159cbfafe1f0" # An Amazon Linux image
-  instance_type = "t2.micro"             # The free tier size
-
-  tags = {
-    Name = "Youssef-Automated-Server"
-  }
+resource "aws_s3_bucket" "success_bucket" {
+  bucket = "youssef-is-live"
 }
