@@ -1,0 +1,1 @@
+Day 37: Learned about the Terraform State file. Ran 'terraform init' to download the AWS provider. Verified that 'terraform plan' checks my code logic even before I connect my AWS keys.
