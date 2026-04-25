@@ -16,5 +16,5 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "success_bucket" {
-  bucket = "youssef-is-live"
+  bucket = var.bucket_name
 }
