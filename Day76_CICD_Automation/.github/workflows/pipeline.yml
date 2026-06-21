@@ -1,0 +1,32 @@
+name: Infrastructure CI Engine
+
+# Trigger the automation runner every time code is pushed to the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate_infrastructure:
+    name: Lint and Validate Terraform
+    runs-on: ubuntu-latest # Boot up a fresh, isolated Linux runner container
+
+    steps:
+      # Step 1: Check out the repository code into the runner memory space
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Install the specific, locked version of Terraform into the runner
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.5.7
+
+      # Step 3: Run code formatting validation check
+      - name: Terraform Format Check
+        run: terraform fmt -check
+
+      # Step 4: Initialize the working directory inside the runner engine
+      - name: Terraform Init
+        run: terraform init -backend=false # Skip backend initialization for pure static syntax checks
