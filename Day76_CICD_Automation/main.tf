@@ -18,4 +18,8 @@ resource "aws_s3_bucket" "automation_test_bucket" {
     Name        = "vOIS-CI-CD-Test"
     Environment = "Automation"
   }
+ resource "aws_s3_bucket" "automation_test_bucket" {
+  bucket = "vois-automation-pipeline-bucket"
+  this_is_a_broken_syntax_error = true # This attribute does not exist in AWS S3!
+  }
 }
