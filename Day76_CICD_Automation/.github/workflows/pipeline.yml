@@ -33,3 +33,11 @@ jobs:
       # 5. Execute deep syntax verification compiler checks
       - name: Validate Configuration Syntax
         run: terraform validate
+      # 6. RUN ENTERPRISE SECURITY SCANNING (SAST)
+      # This step invokes the official Trivy engine to hunt for infrastructure flaws
+      - name: Run Trivy Security Scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'config' # Tell Trivy to scan IaC configuration files (Terraform)
+          severity: 'CRITICAL,HIGH' # Fail the build ONLY if CRITICAL or HIGH threats are found
+          exit-code: '1' # Tell the pipeline to fail (exit code 1) if vulnerabilities are detected
