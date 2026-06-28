@@ -41,3 +41,9 @@ jobs:
           scan-type: 'config' # Tell Trivy to scan IaC configuration files (Terraform)
           severity: 'CRITICAL,HIGH' # Fail the build ONLY if CRITICAL or HIGH threats are found
           exit-code: '1' # Tell the pipeline to fail (exit code 1) if vulnerabilities are detected
+
+      # 7. AUTOMATED CD DRY-RUN: Run Terraform Plan
+      # In a full live environment, this communicates with AWS. Here, it compiles the execution plan graph.
+      - name: Generate Terraform Plan Blueprint
+        run: terraform plan -no-color
+
