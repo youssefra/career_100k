@@ -45,5 +45,7 @@ jobs:
       # 7. AUTOMATED CD DRY-RUN: Run Terraform Plan
       # In a full live environment, this communicates with AWS. Here, it compiles the execution plan graph.
       - name: Generate Terraform Plan Blueprint
-        run: terraform plan -no-color
-
+        run: terraform plan -auto-approve
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.MOCK_AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.MOCK_AWS_SECRET_KEY }}
