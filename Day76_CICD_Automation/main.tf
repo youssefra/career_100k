@@ -1,3 +1,14 @@
+terraform {
+  required_version = ">= 1.5.7"
+  
+  backend "s3" {
+    bucket         = "vois-automation-state-bucket" # You would pre-create this bucket
+    key            = "cicd/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "vois-automation-state-lock"   # You would pre-create this table
+    encrypt        = true
+  }
+}
 provider "aws" {
   region                      = "us-east-1"
   access_key                  = "mock_key"
